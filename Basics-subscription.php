@@ -43,8 +43,8 @@ Validación y Seguridad: El script contiene varias validaciones y mecanismos de 
             display: block;
             margin-bottom: 5px;
         }
-        .form-group input[type="text"], 
-        .form-group input[type="password"], 
+        .form-group input[type="text"],
+        .form-group input[type="password"],
         .form-group input[type="checkbox"] {
             width: 100%;
             padding: 10px;
@@ -216,7 +216,7 @@ Validación y Seguridad: El script contiene varias validaciones y mecanismos de 
                 let tipocurrency = document.getElementById('tipocurrency2').value;
                 let discount = document.getElementById('discount').value;
                 document.getElementById('frmProcess').style.display = 'inherit';
-                fetch('/6QMH5f311WS1Go2bT71PRnUaLz26zlL/76Rc9Cc4Slk2mLmTO7/ximpn0LuEbL9iP1JL0/EN/dashboard?p=40', {
+                fetch('/6QM...', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ request_type: 'create_customer_subscription', subscr_plan_id: subscr_plan_id, tipocurrency: tipocurrency, discount: discount, contra: contra }),
@@ -279,7 +279,7 @@ Validación y Seguridad: El script contiene varias validaciones y mecanismos de 
                         .then(response => response.json())
                         .then(data => {
                             if (data.payment_id) {
-                                parent.location.href = 'https://www.memeky.com/login?succes=1';
+                                parent.location.href = 'https://www.example.com/login?succes=1';
                             } else {
                                 document.getElementById('frmProcess').style.display = 'none';
                                 document.getElementById('cuadrogrande').style.filter = 'inherit';
@@ -377,7 +377,7 @@ $regex_pattern = '/(?:' . implode('|', $buscarWord) . ')/i';
 if(preg_match_all($regex_pattern, $userA, $matches)){$encontrado = true;}
 if(preg_match_all($regex_pattern, $variablecookie2, $matches)){$encontrado = true;}
 if(preg_match($patter, $subscr_plan_id) && preg_match($patter, $tipocurrency) && preg_match($patter, $discount) && preg_match($patterContra, $contra) && $encontrado === false && preg_match($patterCod, $userA) && !empty($userA) && strlen($userA) <= 20 && preg_match($patterCod2, $variablecookie2) && !empty($variablecookie2) && strlen($variablecookie2) <= 500){
-$ASASAS = mysqli_query($conexion, "SELECT  FROM  WHERE user='$userA' ") or die("Ups a habido un error 3499953212" );
+$ASASAS = mysqli_query($conexion, "SELECT ...  FROM  ... WHERE user='$userA' ") or die("Ups a habido un error 3499953212" );
 $ASASAS3434  = mysqli_fetch_array($ASASAS);
 $proR = ;
 $PIN = ;
@@ -440,7 +440,7 @@ $mensajeError = 'Incorrect password';
 if($fase1 === false ){ echo json_encode(['error' => $mensajeError]);  }
 if($fase1 === true ){
 try {
-$TRYCUSTOM2 = mysqli_query($conexion, "SELECT  user, USD, EUR, GBP, CHF, MXN FROM  WHERE user='$userA' ") or die("Ups a habido un error 3499953212" );
+$TRYCUSTOM2 = mysqli_query($conexion, "SELECT  user, USD, EUR, GBP, CHF, MXN FROM ...  WHERE user='$userA' ") or die("Ups a habido un error 3499953212" );
 if($TRYCUSTOM  = mysqli_fetch_array($TRYCUSTOM2)){
 if($TRYCUSTOM['user'] === $userA ){
 if($tipocurrency === "1" && $TRYCUSTOM['USD'] !== ""){
@@ -613,7 +613,7 @@ $regex_pattern = '/(?:' . implode('|', $buscarWord) . ')/i';
 if(preg_match_all($regex_pattern, $userA, $matches)){$encontrado = true;}
 if(preg_match_all($regex_pattern, $variablecookie2, $matches)){$encontrado = true;}
 if($encontrado === false && preg_match($patterCod, $userA) && !empty($userA) && strlen($userA) <= 20 && preg_match($patterCod2, $variablecookie2) && !empty($variablecookie2) && strlen($variablecookie2) <= 500){
-$ASASAS = mysqli_query($conexion, "SELECT  email, nombre, general, rand1 FROM ¡ WHERE user='$userA' ") or die("Ups a habido un error 3499953212" );
+$ASASAS = mysqli_query($conexion, "SELECT  email, nombre, general, rand1 FROM ... WHERE user='$userA' ") or die("Ups a habido un error 3499953212" );
 $ASASAS3434  = mysqli_fetch_array($ASASAS);
 
 $hash = hash_hmac('sha256', $provarSNUMBER, $provarPIN, false);
@@ -635,7 +635,7 @@ $planIntervalMes =  "months";}
 $name = $ASASAS3434['nombre'];
 $email = $ASASAS3434['email'];
 if( $discount !== "" ){
-if($discount !== "POLAKO"  ){
+if($discount !== ""  ){
 $fase2 = false;
 }else{
 $cupon = $discount;
@@ -681,7 +681,7 @@ $current_period_end = date("Y-m-d H:i:s", $subscriptionData->current_period_end)
 $payment_id = 0;
 try{
 if( $general2Vaa[9] === "1"){
-$plansB = mysqli_query($conexion, "SELECT FROM  WHERE email='$email'  ") or die("Ups a habido un error 224277" );
+$plansB = mysqli_query($conexion, "SELECT ... FROM ...  WHERE email='$email'  ") or die("Ups a habido un error 224277" );
 if($plansB = mysqli_fetch_array($plansB)){
 if($email === $plansB['email'] ){
 $stripe = new \Stripe\StripeClient(
@@ -746,16 +746,16 @@ $mail = new PHPMailer(true);
 try {
 $mail->SMTPDebug = 0;
 $mail->isSMTP();
-$mail->Host       = 'mail.memeky.com';
+$mail->Host       = 'mail.example.com';
 $mail->SMTPAuth   = true;
-$mail->Username   = 'accounts@memeky.com';
-$mail->Password   = 'xdoTC!pn$WCLVR#nq$%z#TTVmrdZvkiIFt%k8VXPP4MR2WLbX1';
+$mail->Username   = 'accounts@example.com';
+$mail->Password   = 'xdoTC!pn$';
 $mail->SMTPSecure = 'ssl';
 $mail->Port       = 465;
-$mail->setFrom('accounts@memeky.com', 'Memeky');
+$mail->setFrom('accounts@example.com', 'example');
 $mail->addAddress($email, $userA);
 $mail->isHTML(true);
-$mail->Subject = 'YOU ARE PREMIUM | Memeky';
+$mail->Subject = 'YOU ARE PREMIUM | example';
 $mail->Body    = $mailInside;
 $mail->send();
 } catch (Exception $efail) {
@@ -764,7 +764,7 @@ $timestamp = time();
 $dt = new DateTime("now", new DateTimeZone($tz));
 $actual = $dt->format('Y-m-d H:i:s');
 $errorfatal = "error se ha pagado pero no enviado mail";
-$consulta23 = "INSERT INTO error(user, error, fecha) VALUES ('$userA','$errorfatal','$actual')";
+$consulta23 = "INSERT INTO (user, error, fecha) VALUES ('$userA','$errorfatal','$actual')";
 $resultado23 = mysqli_query($conexion,$consulta23);
 }
 $output = [
@@ -777,4 +777,3 @@ echo json_encode(['error' => 'Transaction has been failed!']);
 }
 }
 ?>
-
